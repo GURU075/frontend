@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="tri" width="400" height="500">
+
+    </canvas>
+    <script>
+        const c = document.getElementById("tri");
+        const d = c.getContext("2d");
+        d.beginPath();
+        d.moveTo(100,300);
+        d.lineTo(300,300);
+        d.lineTo(200,50)
+        d.closePath(); 
+        d.stroke();
+    </script>
+</body>
+</html>

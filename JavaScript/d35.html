@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw a Star</title>
+</head>
+<body>
+    <!-- <canvas id="c1" width="300" height="300" ></canvas>
+    <script>
+        function draw() {
+            var canvas = document.getElementById("c1");
+            var ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.moveTo(150, 50);  
+            ctx.lineTo(170, 120); 
+            ctx.lineTo(250, 120); 
+            ctx.lineTo(190, 170); 
+            ctx.lineTo(210, 250); 
+            ctx.lineTo(150, 200); 
+            ctx.lineTo(90, 250);  
+            ctx.lineTo(110, 170);
+            ctx.lineTo(50, 120); 
+            ctx.lineTo(130, 120); 
+            ctx.closePath(); 
+
+            ctx.strokeStyle = "#4499"; 
+            ctx.lineWidth = 4; 
+            ctx.stroke();
+        }
+
+        window.addEventListener("load", draw);
+    </script> -->
+
+    <p>click</p>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showpostion)
+            }else{
+                x.innerHTML="geolocation is not working"
+            }
+        }
+        function showpostion(postion){
+            x.innerHTML="latitude:"+postion.coords.latitude+" <br>longitude:"+postion.coords.longitude
+            x.innerHTML=" "+ getAddress(postion.coords.latitude,postion.coords.longitude);
+            getAddress(latitude, longitude)
+                .then((address) => {
+                    if (address) {
+                        x.innerHTML += `<br>Address: ${address}`;
+                    } else {
+                        x.innerHTML += "<br>Unable to fetch address.";
+                    }
+                })
+                .catch((error) => {
+                    x.innerHTML += `<br>Error fetching address: ${error}`;
+                });
+        }
+        
+    </script>
+</body>
+</html>

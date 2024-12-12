@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="sel" onchange="changeCol()">
+        <option value="orange">orange</option>
+        <option value="lightblue">lightblue</option>
+        <option value="blue">blue</option>
+    </select>
+    <script>
+        function changeCol(){
+        let x=document.getElementById("sel").value;
+        document.body.style.backgroundColor = x;
+    }
+    </script>
+</body>
+</html>

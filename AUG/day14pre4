@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          
+          th, td {
+              text-align: left;
+             padding: 8px;
+             }
+          </style>
+    </head>
+    <body>
+        <div style="overflow-x: auto;">
+        <table >
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td>Guru</td>
+              <td>Yadav</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Ram</td>
+              <td>Jackson</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>sham</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+            </tr>
+          </table>
+          </div>
+    </body>
+</html>

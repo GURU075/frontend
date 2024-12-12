@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="demo" width="300" height="300"></canvas>
+    <script>
+        const c = document.getElementById("demo");
+        const d = c.getContext("2d");
+        d.beginPath();
+        d.arc(100, 85, 60, 0, 2 * Math.PI);
+        d.stroke();
+    </script>
+</body>
+</html>

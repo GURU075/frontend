@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            display: grid;
+            grid-template-columns: 10% 20% 20% 20% 20% 10% ;
+            grid-template-rows: 60px 80px 150px 60px ;
+            width: 80%;
+            text-align: center;
+            grid-gap: 7px;
+            font-size: large;
+            font-weight: 900;
+            color: rgb(8, 67, 90);
+         }
+         .a1{
+            padding-top: 20px;
+            grid-column: 1/2;
+            grid-row: 1/5;
+            background-color: rgb(27, 180, 180);
+         }
+         .a2{
+            padding-top: 20px;
+            grid-column: 6/7;
+            grid-row: 1/5;
+            background-color: rgb(27, 180, 180);
+         }
+         header{
+            padding-top: 20px;
+            grid-column: 2/6;
+            grid-row: 1/2;
+            background-color: rgb(9, 101, 107);
+            color: rgb(190, 233, 233);
+         }
+         footer{
+            padding-top: 20px;
+            grid-column: 2/6;
+            grid-row: 4/5;
+            background-color: rgb(9, 101, 107);
+            color: rgb(190, 233, 233);
+         }
+         .box1{
+            padding-top: 20px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-color: rgb(11, 169, 180);
+            color: rgb(190, 233, 233);
+         }
+         .box2{
+            padding-top: 20px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background-color: rgb(11, 169, 180);
+            color: rgb(190, 233, 233);
+         }
+         .box3{
+            padding-top: 20px;
+            grid-column: 4/5;
+            grid-row: 2/3;
+            background-color: rgb(11, 169, 180);
+            color: rgb(190, 233, 233);
+         }
+         .sidebar{
+            padding-top: 20px;
+            grid-column: 5/6;
+            grid-row: 2/4;
+            background-color: rgb(9, 70, 75);
+            color: rgb(190, 233, 233);
+         }
+         .content{
+            padding-top: 20px;
+            grid-column: 2/5;
+            grid-row: 3/4;
+            background-color: rgb(171, 215, 219);
+            color: rgb(7, 71, 71);
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>header</header>
+    <aside class="a1">Aside 1 </aside>
+    <aside class="a2">Aside 2</aside>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">main content</div>
+    <footer>footer</footer>
+</div>
+</body>
+</html>

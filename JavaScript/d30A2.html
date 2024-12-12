@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter Password</p>
+    
+        <input type="password" id="pass">
+        <br><br><button onclick="validatePass()">validate </button>
+        <div class="message" id="message"></div>
+    <script>
+      function validatePass(){
+        const password = document.getElementById("pass").value;
+        const passRegx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])/;
+        const msg = document.getElementById("message");
+
+            if (passRegx.test(password)) {
+                msg.textContent = "Valid Password!";
+            } else {
+                msg.textContent = "Invalid Password. Please try again.";
+            }
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ececde; 
+        }
+        h1 {
+            color: red; 
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        .hex-color {
+            color: #1899aa; 
+        }
+        .rgb-color {
+            color: rgb(153, 184, 16);
+        }
+        .hsl-color {
+            color: hsl(286, 85%, 49%); 
+        }
+        .background-color {
+            background-color: rgb(211, 194, 165); 
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Color red</h1>
+    
+    <p class="hex-color">
+        This text uses a <strong>hex color</strong> value .
+    </p>
+
+    <p class="rgb-color">
+        This text uses an <strong>RGB color</strong> value .
+    </p>
+
+    <p class="hsl-color">
+        This text uses an <strong>HSL color</strong> value .
+    </p>
+
+    <p class="background-color">
+        This paragraph has a <strong>background color</strong> applied using an RGB value .
+    </p>
+
+</body>
+</html>

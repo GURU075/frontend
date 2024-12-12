@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Textareas Line Number</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        #lineNumberDisplay {
+            font-size: 16px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Multiple Textareas Line Number Example</h2>
+    
+    <!-- Textareas -->
+    <textarea id="textarea1" placeholder="Textarea 1"></textarea>
+    <textarea id="textarea2" placeholder="Textarea 2"></textarea>
+    <textarea id="textarea3" placeholder="Textarea 3"></textarea>
+    
+    <!-- Display line number -->
+    <p id="lineNumberDisplay">Cursor is on line number: Not yet selected</p>
+
+    <script>
+        function getLineNumber(textarea) {
+            const startPos = textarea.selectionStart;
+            const textBeforeSelection = textarea.value.substring(0, startPos);
+            const lineBreaks = textBeforeSelection.split('\n');
+            return lineBreaks.length; // The number of lines
+        }
+
+        const textareas = document.querySelectorAll('textarea'); // Select all textareas
+        const lineNumberDisplay = document.getElementById('lineNumberDisplay');
+
+        // Function to update the line number display
+        function updateLineNumber(event) {
+            const textarea = event.target; // Get the clicked/typed textarea
+            const lineNumber = getLineNumber(textarea);
+            lineNumberDisplay.textContent = `Cursor is on line number: ${lineNumber}`;
+        }
+
+        // Add event listeners for each textarea
+        textareas.forEach(textarea => {
+            textarea.addEventListener('mouseup', updateLineNumber); // Mouse interaction
+            textarea.addEventListener('keyup', updateLineNumber);  // Keyboard interaction
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button id="save">Save Name in local storage</button>
+  <p id="displayName"></p>
+
+  <script>
+    const saveButton = document.getElementById("save");
+    const nameInput = document.getElementById("nameInput");
+    const displayName = document.getElementById("displayName");
+
+    saveButton.addEventListener("click", () => {
+      const name = nameInput.value;
+      if (name) {
+        localStorage.setItem("userName", name);
+        displayName.textContent = `Saved Name: ${name}`;
+      }
+    });
+
+    window.addEventListener("load", () => {
+      const savedName = localStorage.getItem("userName");
+      if (savedName) {
+        displayName.textContent = `Saved Name: ${savedName}`;
+      }
+    });
+  </script>
+</body>
+</html>

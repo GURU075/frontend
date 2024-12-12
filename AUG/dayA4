@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<head>
+    <p>example of table</p>
+</head>
+<body>
+    <table border="black">
+        <tr>
+            <th colspan="4" bgcolor="pink">Score Card</th>
+            
+        </tr>
+        <tr>
+            <th>Sr.No</th>
+            <th>player Name</th>
+            <th>Runs</th>
+            <th>Balls</th>
+        </tr>
+        <tr bgcolor="lightgreen">
+            <td>1</td>
+            <td>Sachin</td>
+            <td>50</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ganguly</td>
+            <td>40</td>
+            <td>25</td>
+        </tr>
+        <tr bgcolor="yellow">
+            <td>3</td>
+            <td>Yuvi</td>
+            <td>50</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>dhoni</td>
+            <td>50</td>
+            <td>25</td>
+        </tr>
+        <tr bgcolor="#ADD8E6">
+            <td colspan="2" align="center">Total</td>
+            <td>220</td>
+            <td>110</td>
+        </tr>
+        
+    </table>
+</body>

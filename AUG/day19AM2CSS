@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f3f6;
+        }
+        .container{
+            display: flex;
+            width: 50%;
+            height: 500px;
+            margin: 40px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            
+        }
+        .left{
+            width: 40%;
+           
+              padding-left: 20px;
+              padding-right: 20px;
+             color: white;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             text-align: center;
+             background-color: #2874f0;
+           ;
+        }
+        .left h2{
+            font-size: 28px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: left;
+            padding-left: 10px;
+            /* margin-top: 0px; */
+            margin-bottom: 20px;
+        }
+        .left p{
+            width: 180px;
+            font-size: 14px;
+           line-height: 1.5;
+           padding-left: 10px;
+           text-align: left;
+            margin-bottom: 190px;
+        }
+        .right{
+           
+            width: 60%;
+            padding: 25px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .illustration{
+            max-width: 100%;
+            /* margin-bottom: 0px; */
+            
+
+        }
+        .login-form{
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           
+        }
+        .login-form input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            border: none;
+            /* border: 1px solid #ccc;
+            border-radius: 3px; */
+            border-bottom: 1px solid ;
+        }
+        .login-form p{
+            font-size: 12px;
+            color:  #878787;
+            margin-bottom: 40px;
+        }
+        .login-form a{
+            color: #2874f0;
+            text-decoration: none;
+        }
+        .otp-button{
+            padding: 12px;
+            font-size: 14px;
+            background-color: #fb641b;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 170px;
+            cursor: pointer;
+        }
+        .otp-button:hover {
+              background-color: #f7530d;
+        }
+        .new-user{
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Login</h2>
+            <p>Get access to your Orders, Wishlist and Recommendations</p>
+            <img src="laptop.png" alt="img"  class="illustration">
+        </div>
+
+        <div class="right">
+            <form action="#" class="login-form">
+                <input type="text" placeholder="Enter Email/Mobile number" required>
+                <p>By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                <button type="submit" class="otp-button"> Request OTP</button>
+                <p class="new-user">New to Flipkart? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

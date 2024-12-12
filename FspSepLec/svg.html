@@ -1,0 +1,68 @@
+<!-- <svg width="300" height="200">
+    <defs>
+      <pattern id="imagePattern" patternUnits="userSpaceOnUse" width="300" height="300">
+        <image href="https://huggingface.co/datasets/huggingfacejs/tasks/resolve/main/image-classification/image-classification-input.jpeg" x="0" y="-10" width="200" height="250" />
+      </pattern>
+    </defs>
+    
+    <polygon points="100,10 40,198 160,198"
+    style="fill:url(#imagePattern);stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    
+  </svg> -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor-Interactive Background</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+  
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: background 0.3s ease;
+      }
+  
+      .content {
+        z-index: 1;
+        color: white;
+        font-size: 2em;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="background"></div>
+    <div class="content">
+      Move your cursor to see the magic!
+    </div>
+  
+    <script>
+      const background = document.querySelector('.background');
+  
+      document.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth * 255;
+        const y = e.clientY / window.innerHeight * 255;
+        const color1 = `rgb(${x}, 100, ${255 - x})`;
+        const color2 = `rgb(${y}, ${255 - y}, 150)`;
+        background.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+      });
+    </script>
+  
+  </body>
+  </html>
+  

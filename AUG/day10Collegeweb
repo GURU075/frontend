@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Engineering College</title>
+    <link rel="stylesheet" href="college.css">
+</head>
+<body>
+
+    <!-- Header with Logo and Enquire Button -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>MS <span>Engineering College</span></h1>
+            </div>
+            <div class="enquire">
+                <button>Enquire Now!</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Placement</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="college-image.jpg" alt="College Banner">
+    </section>
+
+    <!-- Content Section -->
+    <section class="main-content">
+        <h2>Welcome to MS Engineering College</h2>
+        <p>We offer a variety of programs to prepare our students for the future.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 MS Engineering College. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

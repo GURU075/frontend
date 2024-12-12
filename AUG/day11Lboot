@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+         <table class="table-hover table table-dark table-striped table-bordered">
+            <tr class="">
+                <th>name </th>
+                <th> last name</th>
+
+            </tr>
+            <tr>
+                <td>Guru</td>
+                <td>yadav</td>
+            </tr>
+            <tr>
+                <td>swara</td>
+                <td>yadav</td>
+            </tr>
+         </table>
+
+</body>
+</html>

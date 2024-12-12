@@ -1,0 +1,48 @@
+#submit-section{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form{
+    background-color: bisque;
+}
+
+#a{
+    color: brown;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#b{
+    color: blue;
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+input[type="text"]{
+    margin-top: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+input[type="email"]{
+    margin-top: 20px;
+    text-align: center;
+    background-color: aqua;
+}
+
+input{
+    background-color: aquamarine;
+}
+
+.styled-checkbox {
+    margin-right: 20px;
+    
+}
+
+.checkbox-group {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0;
+    background-color: blueviolet;
+}

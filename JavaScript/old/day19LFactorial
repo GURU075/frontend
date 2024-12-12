@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var n = prompt("enter number");
+        var sum = 1;
+        if (n == 0) {
+            console.log(1);
+        } else {
+            while (n > 0) {
+                sum = sum * n;
+                n--;
+            }
+            console.log("<h1>factorial" + sum);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

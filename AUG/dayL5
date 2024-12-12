@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- <style>
+        ul{
+            display: block;
+            columns: blue;
+            padding: 0%;
+            background-color: aqua;
+            width: 160px;
+        }
+        li a{
+            display: block;
+            columns: blue;
+            padding: 2% 10%;
+            text-decoration: underline;
+        }
+        a:hover:not(.active) {
+  background-color: yellow;
+  color: red;
+}
+       </style> -->
+        <style>
+            ul {
+                /* display: block; */
+                padding: 0;
+                columns: blue;
+                background-color: aqua;
+                list-style-type: none;
+                justify-content: center;
+                overflow: hidden;
+            }
+    
+            li {
+                margin: 0 15px; /* Adjust the spacing between the menu items */
+                float: inline-start;
+            }
+    
+            li a {
+                display: inline;
+                padding: 10px 15px;
+                text-decoration: underline;
+                color: blue; /* Color of the link text */
+            }
+    
+            li a:hover:not(.active) {
+                background-color: yellow;
+                color: red;
+            }
+       </style>
+    </head>
+    <body>
+        
+        <h1>
+            <ul>
+                <li><a href="#" class="active"> contact</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </h1>
+    </body>
+</html>

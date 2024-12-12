@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Aadhaar Card Submission Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+       
+        <p>Select your preferences:</p>
+        <input type="checkbox" id="create" name="create" value="create">
+        <label for="create">create</label>
+        <br>
+        <input type="checkbox" id="update" name="update" value="update">
+        <label for="update">RUpdate</label>
+        <br><br>
+
+       
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

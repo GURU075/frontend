@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Structure</title>
+</head>
+<body>
+    <h2>Fruits</h2>
+    <ol reversed>
+        <li>apple</li>
+        <li>pineapple</li>
+        <li>custard-apple</li>
+        <li>blue-apple</li>
+        <li>green-apple</li>
+    </ol>
+
+    <h2>Flowers</h2>
+    <ol type="A">
+        <li>jasmine</li>
+        <li>hibiscus</li>
+        <li>lotus</li>
+        <li>rose</li>
+    </ol>
+
+    <h2>Cold Drinks</h2>
+    <ol type="a">
+        <li>mazza</li>
+        <li>sprite</li>
+        <li>co-cola</li>
+        <li>7up</li>
+    </ol>
+
+    <h2>Animals</h2>
+    <ol type="i">
+        <li>lion</li>
+        <li>tiger</li>
+        <li>Elephant</li>
+    </ol>
+</body>
+</html>

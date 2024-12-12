@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Responsive Menu</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 75px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.menu a:hover {
+    background-color: darkblue;
+}
+
+@media (min-width: 600px) {
+    .menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu li {
+        margin: 0 10px;
+    }
+
+    .menu a {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

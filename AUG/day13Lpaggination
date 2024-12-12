@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Pagination</h2>
+        <p>The .pagination class provides pagination links:</p>                  
+        <ol class="pagination pagination-lg">
+          <li class="page-item"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item"><a href="#" class="page-link">4</a></li>
+          <li class="page-item"><a href="#" class="page-link">5</a></li>
+          <li class="page-item disabled"><a href="#" class="page-link">next</a></li>
+        
+        </ol>
+      </div>
+      <div class="container">
+        <h2>Breadcrumbs</h2>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#"></a></li>
+          <li class="breadcrumb-item"><a href="#">Pictures</a></li>
+          <li class="breadcrumb-item active">Vacation</li>        
+        </ul>
+      </div>
+      <div class="container bg-warning p-5 m-5">
+        <div class="container text-bg-info p-3 m-2">
+            <div class="card bg-black text-capitalize text-center">
+                <div class="card-header bg-light text-bg-">name</div>
+                <div class="card-body bg-light">GURU</div>
+                <div class="card-footer bg-light">Yadav</div>
+            </div>
+            <button type="button" class=" btn btn-primary m-4" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+            <div id="demo" class="collapse">
+                HI this is collapse after click this will appears.
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle p-2 m-4 " data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+    <div id="demo" class="collapse">
+        HI this is collapse after click this will appears.
+      </div>
+    </div>
+</body>
+</html>

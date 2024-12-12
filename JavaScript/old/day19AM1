@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    var n1= prompt("enter Num1");
+    var n2 = prompt("enter Num2");
+     n1 = Number.parseInt(n1);
+     n2 = Number.parseInt(n2);
+    if(n1>n2){
+        console.log("Num1 is greater");
+        
+    }else{
+        console.log("Num2 is greater");
+    }
+     var j=1;
+    while(j<6){
+        console.log("while loop iteration"+j);
+        j++;
+    }
+    
+    for(j=1;j<6;j++){
+      console.log("for loop iteration"+j);
+    }
+    j=1;
+    do{
+        console.log("do-while loop iteration"+(j++));
+
+    }while(j<6)
+    var day = prompt("enter day");
+    day = Number.parseInt(day);
+
+    switch (day) {
+	case 0:
+		console.log("It's Sunday");
+		break;
+	case 1:
+		console.log("It's Monday!");
+		break;
+	case 2:
+		console.log("It's Tuesday");
+		break;
+	case 3:
+		console.log("It's wednesday");
+		break;
+	case 4:
+		console.log("It's Thursday");
+		break;
+	case 5:
+		console.log("It's Friday!");
+		break;
+	case 6:
+		console.log("It's Saturday!");
+		break;
+	default:
+		console.log("Something went horribly wrong...");
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

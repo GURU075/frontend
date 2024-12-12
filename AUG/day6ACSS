@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: blue;
+            }
+            .bold{
+                font-weight: bolder;
+            }
+            #para1{
+                font-style: italic;
+            }
+            ul li:nth-child(odd) {
+                background-color: lightgray;
+            }
+           
+        </style>
+    </head>
+    <body>
+        
+        <h1>This is a heading</h1>
+        <p class="bold">This is a paragraph with the class "intro".</p>
+        <p id="para1">This is a paragraph with the id "my-paragraph".</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </body>
+</html>

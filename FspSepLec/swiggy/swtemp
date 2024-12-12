@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Food Options</title>
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Main Section Styling */
+main {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+}
+h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.food-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.food-categories .category {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+.food-categories .category img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.food-categories .category p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Filters Section Styling */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #eaeaea;
+}
+.down {
+    margin-left: 5px;
+            border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="swiggy.png" alt="Swiggy Logo">
+            <span>others<i class="down"></i></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">others</a></li>
+                <li><a href="#">swiggy corporate</a></li>
+                <li><a href="#">search</a></li>
+                <li><a href="#">offers</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="#">sign in</a></li>
+                <li><a href="#">cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1 >What's on your mind?</h1>
+
+        <!-- Food Categories -->
+        <section class="food-categories">
+            <div class="category">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTobrXaFYoXifHaQubIGc02Kddwkaq2oT26sx-tOduGm3uyZuhG" alt="Vrat Specials">
+                <p>Vrat Specials</p>
+            </div>
+            <div class="category">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW7Ns9PGankMIhVsI_2WnCmFsvtb7H84M8ACTX_ZX6OgpUvNBM" alt="Indian Sweets">
+                <p>Indian Sweets</p>
+            </div>
+            <div class="category">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrwrh1rECKYILfxdexAAXRAsd06GJBzY6_CzHZM487HAItP6FG" alt="Idli">
+                <p>Idli</p>
+            </div>
+            <div class="category">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf-CuT18GfxoR4r11h2WcA79kcgduo0cQuk4kOTlRXVuUwGULw" alt="Dosa">
+                <p>Dosa</p>
+            </div>
+            <div class="category">
+                <img src="https://c8.alamy.com/comp/2B7TM36/aloo-puri-or-potato-curry-with-fried-poori-popular-indian-breakfast-lunch-dinner-menu-2B7TM36.jpg" alt="Poori">
+                <p>Poori</p>
+            </div>
+            <div class="category">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/047/825/565/small/idli-against-transparent-background-free-png.png" alt="Appam">
+                <p>Appam</p>
+            </div>
+            <div class="category">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkErPtC2l6ox7_rb6UtfRRFsgy9MF3qP-hufRG-a_e69ZR5hTe" alt="Biryani">
+                <p>Biryani</p>
+            </div>
+        </section>
+        <h2>Restaurants with online food delivery in Bangalore</h2>
+
+        <!-- Filters Section -->
+        <section class="filters">
+            <button>filter</button>
+            <button>sort by</button>
+            <button>rating 4.0+</button>
+            <button>pure veg</button>
+            <button>new on swiggy</button>
+            <button>offers</button>
+        </section>
+    </main>
+
+</body>
+</html>

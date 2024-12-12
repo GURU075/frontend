@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Images on Hover</title>
+    <style>
+        #message {
+            width: 300px;
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 18px;
+            margin: 20px auto;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+
+        .images {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 200px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Hover over me to see more images!</div>
+
+    <div class="images" id="imageContainer">
+        <img >
+    </div>
+
+    <script>
+        const message = document.getElementById("message");
+        const imageContainer = document.getElementById("imageContainer");
+
+        message.addEventListener("mouseover", function () {
+            const thirdImage = document.getElementById("thirdImage");
+            if (thirdImage) {
+                imageContainer.removeChild(thirdImage);
+            }
+            const newImage1 = document.createElement("img");
+            newImage.src = "https://i.pinimg.com/originals/a5/a8/b9/a5a8b9ce5bda5871f138603fb10ce01d.jpg"; 
+            newImage.alt = "Image 1";
+            newImage.id = "firstImage"; 
+            imageContainer.appendChild(newImage1);
+            const newImage = document.createElement("img");
+            newImage.src = "https://i.pinimg.com/736x/b2/8d/0e/b28d0efa3f5a9bdbb5797c7dd53365a6.jpg"; 
+            newImage.alt = "Image 2";
+            newImage.id = "secondImage"; 
+            imageContainer.appendChild(newImage);
+        });
+
+        message.addEventListener("mouseout", function () {
+            const secondImage = document.getElementById("secondImage");
+            if (secondImage) {
+                imageContainer.removeChild(secondImage);
+            }
+            const firstImage = document.getElementById("firstImage");
+            if (firstImage) {
+                imageContainer.removeChild(firstImage);
+            }
+            const newImage2 = document.createElement("img");
+            newImage.src = "https://i.pinimg.com/originals/a5/a8/b9/a5a8b9ce5bda5871f138603fb10ce01d.jpg"; 
+            newImage.alt = "Image 3";
+            newImage.id = "thirdImage"; 
+            imageContainer.appendChild(newImage2);
+        });
+    </script>
+</body>
+</html>

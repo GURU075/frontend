@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Circle Inside Square</title>
+</head>
+<body>
+    <svg width="200" height="200">
+        <rect x="10" y="10" width="180" height="180" fill="cyan" stroke="light blue" stroke-width="4"/>
+
+        <circle cx="100" cy="100" r="80" fill="magenta" />
+    </svg>
+</body>
+</html>

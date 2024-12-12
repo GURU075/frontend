@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-size: 50px;
+                background-color: aqua;
+            }
+            /* Corrected media query syntax */
+            @media screen and (max-width: 400px) {
+                body {
+                    font-size: 140px;
+                    background-color: yellow;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>Hi Hello</div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50px 80px 250px 8px;
+            grid-template-areas: 
+            "nav navRight navRight navRight"
+            "header header header header"
+            "main main main main"
+            "footer footer footer footer";
+         }
+         nav{
+            display: flex;
+            grid-area: nav;
+            align-items: center;
+            justify-content: space-between;
+            
+         }
+         nav span{
+            padding-left: 10px;
+            
+         }
+         nav img{
+            padding-right: 20px;
+         }
+         nav div{
+            align-items: center;
+            text-align: center;
+         }
+         ul{
+       
+            display: flex;
+            justify-content: space-between;
+            
+            
+         }
+         nav li{
+            display: flex;
+            justify-content: flex-end;
+            text-align: end;
+            padding-right: 130px;
+         }
+         #cart{
+            padding-right: 5px;
+            margin-right: 10px;
+         }
+         #arr{
+            padding-left: 10px;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 10px;
+         }
+         
+         .navRight{
+            display: flex;
+            justify-content: flex-end;
+            grid-area: navRight;
+         }
+         .header{
+            grid-area: header;
+         }
+         .main{
+            grid-area: main;
+         }
+         .footer{
+            grid-area: footer;
+         }
+         .down {
+            border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <img src="swiggy.png" alt="logo" width="40px">
+                <span id="arr"><u>other</u></span>
+                <span><i class="down"></i></span>
+            </div>
+            
+        </nav>
+        <nav class="navRight">
+            <ul>
+                <li>Swiggy Corporate</li>
+                <li>🔍Search</li>
+                <li>Offer</li>
+                <li>Help <sup>NEW</sup></li>
+                <li>👤Sign In</li>
+                <li id="cart">🛒Cart</li>
+            </ul>
+        </nav>
+        
+        <header class="header"></header>
+        <main class="main"></main>
+        <footer class="footer">© 2024 Swiggy</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Text</title>
+</head>
+<body>
+    <p id="description">This is the original text.</p>
+    <button onclick="changeText()">Change </button>
+
+    <script>
+        function changeText() {
+            const para = document.querySelector('#description');
+            para.textContent = "This is the new updated text!";
+        }
+    </script>
+</body>
+</html>
+
+////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color</title>
+</head>
+<body>
+    <div class="highlight">Box 1</div>
+    <div class="highlight">Box 2</div>
+    <div class="highlight">Box 3</div>
+    <button onclick="changeBgColor()">Change </button>
+
+    <script>
+        function changeBgColor() {
+            const elements = document.querySelectorAll('.highlight');
+            elements.forEach(element => {
+                element.style.backgroundColor = "yellow";
+            });
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter your name">
+    <button onclick="setValue()">Set Value</button>
+
+    <script>
+        function setValue() {
+            const inputField = document.querySelector('#userInput');
+            inputField.value = "Guru";
+        }
+    </script>
+</body>
+</html>
+
+//////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log List Items</title>
+</head>
+<body>
+    <ul class="items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="logListItems()">Log Items</button>
+
+    <script>
+        function logListItems() {
+            const items = document.querySelectorAll('.items li');
+            items.forEach(item => {
+                console.log(item.textContent);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+

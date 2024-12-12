@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout with Patterned Background</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+Hebrew&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('img1.jpg'); /* Ensure this image path is correct */
+            font-family: 'Noto Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            min-height: 100vh;
+            width: 100%;
+            margin: 0;
+        }
+
+        .a {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 200px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .b {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .c {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 200px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .d {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .box1 {
+            background-color: #3498db;
+            font-family: 'Noto Sans', sans-serif;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .box2 {
+            background-color: #faa94d;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .box3 {
+            background-color: #f1e210;
+            font-family: 'Noto Sans JP', sans-serif;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="container">
+            <div class="box1">Hello, World!</div>
+            <div class="box2">नमस्कार </div>
+            <div class="box3">こんにちは、世界！</div>
+        </div>
+
+        <div class="b">
+            <div class="box1">Hello, World!</div>
+            <div class="box2">नमस्कार </div>
+            <div class="box3">こんにちは、世界！</div>
+        </div>
+
+        <div class="c">
+            <div class="box1">Hello, World!</div>
+            <div class="box2">नमस्कार </div>
+            <div class="box3">こんにちは、世界！</div>
+        </div>
+
+        
+    </div>
+</body>
+
+</html>

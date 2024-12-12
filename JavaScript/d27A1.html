@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <input type="number" id="phone" placeholder="Phone Number" required><br>
+        <input type="text" id="address" placeholder="Address" required><br>
+        <input type="text" id="pincode" placeholder="Pincode" required><br>
+        <input type="date" id="dob" placeholder="Date of Birth" required><br>
+        <input type="text" id="city" placeholder="City" required><br>
+        <input type="text" id="state" placeholder="State" required><br>
+        <input type="text" id="country" placeholder="Country" required><br>
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            const inputs = document.querySelectorAll('#myForm input');
+            let isValid = true;
+
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    alert(`${input.placeholder} is required`);
+                    isValid = false;
+                }
+            });
+
+            if (isValid) {
+                alert("Form submitted successfully!");
+            }
+        }
+    </script>
+</body>
+
+</html>

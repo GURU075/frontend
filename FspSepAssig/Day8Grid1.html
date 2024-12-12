@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: 40px 40px 250px;
+            grid-gap: 10px;
+            text-align: center;
+            
+            width: 80%;
+        }
+        header{
+            padding-top: 7px;
+            grid-column: 1/4;
+            
+            
+            background-color: rgb(253, 194, 117);
+        }
+        .search{
+            padding-top: 7px;
+             grid-column: 1/3;
+             background-color: rgb(253, 194, 117);
+        }
+        .left{
+            padding-top: 7px;
+            grid-column: 1/2;
+            background-color: rgb(253, 194, 117);
+        }
+        .middle{
+            padding-top: 7px;
+            grid-column: 2/3;
+            background-color: rgb(253, 194, 117);
+        }
+        .right{
+            padding-top: 7px;
+            grid-column: 3/4;
+            grid-row: 2/4;
+            background-color: rgb(253, 194, 117);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <div class="search">Search</div>
+        <div class="left">Left Sidebar</div>
+        <div class="middle">Middle Column</div>
+        <div class="right">Right Sidebar</div>
+    </div>
+</body>
+</html>

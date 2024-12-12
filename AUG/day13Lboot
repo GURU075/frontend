@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+        <img class="img-thumbnail" src="doodle.jpeg" alt="img">
+        <ul>
+            <li class="list-group-item list-group-item-info">
+                    info
+            </li>
+            <li class="list-group-item list-group-item-danger">
+                danger
+
+            </li>
+            <li class="list-group-item list-group-item-dark">dark</li>
+        </ul>
+        
+</body>
+</html>

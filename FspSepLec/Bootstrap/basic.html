@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(62, 171, 235);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 40% 50%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .c1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #text {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            display: block;
+            width: 300px;
+        }
+
+        .button1 {
+            /* display: flex; */
+            align-items: center;
+            /* justify-content: space-between; */
+            /* background-color: aliceblue; */
+            border-radius: 60px;
+            overflow: hidden;
+            width: 250px;
+            cursor: pointer;
+        }
+
+        .arrow {
+            background-color: rgb(228, 206, 11);
+            padding: 20px;
+            color: white;
+            font-size: 30px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .button-text {
+            padding: 20px;
+            color: rgb(20, 205, 238);
+            background-color: white;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1">
+            <h2><span style="color: rgba(0, 219, 235, 0.74); font-size: 35px;">S</span>UPERB<span style="color: rgba(240, 94, 27, 0.74); font-size: 35px;">W</span>EBISTE<span style="color: rgba(235, 219, 0, 0.74); font-size: 35px;">B</span>UILDER</h2>
+            <p id="text">List of website Builders</p>
+            <div class="button1">
+                <div class="arrow">
+                    &gt;
+                </div>
+                <div class="button-text">
+                    Learn More
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

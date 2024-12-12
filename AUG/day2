@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>My first program</title>
+</head>
+<body bgcolor="grey">
+    
+    <table width = "50%" hieght="50%" border="black">
+        <tr>
+            <th colspan="2">Name</th>
+            <th> marks</th>
+        </tr>
+        <tr>
+            <td>GURU</td>
+            <td>raj</td>
+        </tr>
+
+        
+    </table>
+</body>

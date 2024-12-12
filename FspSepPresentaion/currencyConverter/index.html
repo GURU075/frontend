@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(160, 151, 136);
+            font-size: 20px;
+        }
+        .container{
+            background-color: rgb(226, 223, 217);
+            height: 350px;
+            width: 300px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        form select,button,input{
+            padding-top: 5px;
+            width: 100%;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 20px;
+            font-size: 20px;
+            color: rgb(14, 8, 0);
+            background-color: rgb(179, 166, 143);
+        }
+       .To .from{
+        margin-top: 20px;
+
+       }
+       .dropdown{
+        display: flex;
+        justify-content: space-between;
+       }
+       #output{
+              margin-top: 20px;
+              font-size: 25px;
+              width: 100%;
+       }
+       
+       
+    </style>
+
+</head>
+<body>
+<div class="container">
+<h2>Currency Converter</h2>
+<form action="">
+    <div>
+        <p>Enter amount</p>
+        <input id="amount" type="text" value="100">
+        <br>
+    </div>
+    <div class="dropdown">
+        <div class="from">
+          <p>From</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/US/flat/64.png" height="40" alt="">
+             <select name="From" id="">
+                <option value="USD" selected>USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+             </select>
+
+          </div>
+        </div>
+        <i class="fa-sharp-duotone fa-solid fa-arrow-right-arrow-left"></i>
+
+        <div class="to">
+            <p>To</p>
+            <div class="select-container">
+                <img src="https://flagsapi.com/IN/flat/64.png" height="40" alt="">
+                 <select name="To" id="">
+                    <option value="USD">USD</option>
+                    <option value="INR" selected>INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                 </select>
+    
+              </div>
+        </div>
+        
+
+    </div>
+    <button>Convert</button>
+    <div class="res">
+        <p id="output"></p>
+         
+    </div>
+</form>
+</div>
+
+<script src="code.js"></script>
+<script src="a.js"></script>
+</body>
+</html>

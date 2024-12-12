@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            overflow: scroll;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div onscroll="myFun()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <br><br> Ipsum quisquam porro magnam incidunt totam, eum obcaecati dolorum corrupti? Voluptatibus inventore mollitia tempora nam. Asperiores ab quis expedita corrupti placeat maiores.
+
+    </div>
+    <p id="demo"></p>
+    <script>
+        let x = 0;
+        function myFun() {
+          document.getElementById("demo").innerHTML = x += 1;
+        }
+        </script>
+</body>
+</html>

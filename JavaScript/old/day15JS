@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/Javascript">
+        var a  =10;
+        var b = 22.22;
+        var c = "GURU";
+        var d = 'G';
+         var f = null;
+        var g =true;
+        
+        document.write("<h1>"+a+"</h1>");
+        document.write(b);
+        document.write(c);
+        document.write(d);
+        document.write(f);
+      
+        f=++a;
+        document.write(f);
+        
+        console.log("sum "+(a+b)+"")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

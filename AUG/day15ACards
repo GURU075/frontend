@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Excelr Courses</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="java.png" alt="Java Course" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Java</h4>
+                        <p class="card-text">Description for Java</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="angular.png" alt="Angular Course" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Angular</h4>
+                        <p class="card-text">Description for Angular</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="springboot.jpeg" alt="Spring Boot Course" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Spring Boot</h4>
+                        <p class="card-text">Description for Spring Boot</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="js.png" alt="JavaScript Course" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">JavaScript</h4>
+                        <p class="card-text">Description for JavaScript</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="sql.png" alt="SQL Course" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">SQL</h4>
+                        <p class="card-text">Description for SQL</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="boot.jpeg" alt="Bootstrap Course" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Bootstrap</h4>
+                        <p class="card-text">Description for Bootstrap</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

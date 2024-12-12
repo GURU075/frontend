@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: antiquewhite;
+      }
+        .container{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .box1{
+            display: flex;
+            width: 100px;
+            background-color: rgb(140, 149, 168);
+            margin-left: 3px;
+            font-size: 15px;
+            margin-bottom: 3px;
+            justify-content: center;
+            cursor: pointer;
+
+        }
+        .row{
+            display: flex;
+
+        }
+        .box{
+            margin-left: 4px;
+            margin-bottom: 2px;
+            width: 409px;
+           height: 60px;
+        background-color: rgb(184, 195, 209);
+        }
+        #y{
+            background-color: rgb(228, 173, 70);
+        }
+        #c{
+            background-color: rgb(196, 31, 31);
+        }
+        #g{
+            background-color: green;
+        }
+       
+        #display {
+    margin-left: 4px;
+    margin-bottom: 2px;
+    width: 400px;
+    height: 80px; 
+    background-color: rgb(184, 195, 209);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 50px; 
+    font-family: Arial, sans-serif;
+    border-radius: 10px; 
+}
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      
+    }
+    .background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: background 1s ease;
+    }
+    </style>
+</head>
+<body>
+  <div class="background">
+  <div class="container">
+    <div id="display" class="box">
+        0
+    </div>
+    <div class="row">
+        <div class="box1" onclick="appendValue('1')"><h1>1</h1></div>
+        <div class="box1" onclick="appendValue('2')"><h1>2</h1></div>
+        <div class="box1" onclick="appendValue('3')"><h1>3</h1></div>
+        <div id="y" class="box1" onclick="appendValue('+')"><h1>+</h1></div>
+    </div>
+    <div class="row">
+        <div class="box1" onclick="appendValue('4')"><h1>4</h1></div>
+        <div class="box1" onclick="appendValue('5')"><h1>5</h1></div>
+        <div class="box1" onclick="appendValue('6')"><h1>6</h1></div>
+        <div id="y" class="box1" onclick="appendValue('-')"><h1>-</h1></div>
+    </div>
+    <div class="row">
+        <div class="box1" onclick="appendValue('7')"><h1>7</h1></div>
+        <div class="box1" onclick="appendValue('8')"><h1>8</h1></div>
+        <div class="box1" onclick="appendValue('9')"><h1>9</h1></div>
+        <div id="y" class="box1" onclick="appendValue('*')"><h1>×</h1></div>
+    </div>
+    <div class="row">
+        <div id="c" class="box1" onclick="clearDisplay()"><h1>C</h1></div>
+        <div class="box1" onclick="appendValue('0')"><h1>0</h1></div>
+        <div id="g" class="box1" onclick="calculate()"><h1>=</h1></div>
+        <div id="y" class="box1" onclick="appendValue('/')"><h1>/</h1></div>
+    </div>
+</div>
+
+</div>
+
+<script>
+  let display = document.getElementById('display');
+  let currentInput = "";
+
+  function appendValue(value) {
+      if (currentInput === "0") {
+          currentInput = ""; 
+      }
+      currentInput += value;
+      display.innerHTML = currentInput;
+  }
+
+  function clearDisplay() {
+      currentInput = "0";
+      display.innerHTML = currentInput;
+  }
+
+  function calculate() {
+      try {
+          currentInput = eval(currentInput);
+          display.innerHTML = currentInput;
+      } catch (error) {
+          display.innerHTML = "Error";
+          currentInput = "";
+      }
+  }
+</script>
+<script>
+  const background = document.querySelector('.background');
+
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX / window.innerWidth * 255;
+    const y = e.clientY / window.innerHeight * 255;
+    const color1 = `rgb(${x}, 100, ${255 - x})`;
+    const color2 = `rgb(${y}, ${255 - y}, 150)`;
+    background.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+  });
+</script>
+    
+</body>
+</html>

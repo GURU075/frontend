@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+  <form id="emailForm">
+    <input type="email" id="email" placeholder="Enter your email">
+    <button type="submit">Submit</button>
+    <p id="error" style="color: rgb(183, 201, 25);"></p>
+  </form>
+
+  <script>
+    document.getElementById("emailForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const email = document.getElementById("email").value;
+      const error = document.getElementById("error");
+      if (!email) {
+        error.textContent = "Email field cannot be empty!";
+      } else {
+        error.textContent = "";
+        alert("Form submitted successfully!");
+      }
+    });
+  </script>
+</body>
+</html>

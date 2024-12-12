@@ -1,0 +1,21 @@
+div{
+    background-color: aqua;
+}
+
+#a{
+   color: blueviolet;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    background-color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h3{
+    background-color: aquamarine;
+    color: tomato;
+}

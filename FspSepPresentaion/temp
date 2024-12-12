@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+            body{
+                font-family: 'Noto Sans Devanagari', sans-serif;
+            }
+        </style>
+    </title>
+<body>
+
+
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<p>Box model</p>
+
+</body>
+</html>

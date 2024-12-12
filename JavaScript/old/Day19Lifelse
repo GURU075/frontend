@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var month =prompt("Enter month");
+        let season = '';
+
+        if (month >= 3 && month <= 5) {
+            season = "Summer";
+        } else if (month >= 6 && month <= 9) {
+            season = "Monsoon";
+        } else if (month >= 10 && month <= 2) {
+            season = "Winter";
+        } else {
+            season = "Invalid month.";
+        }
+        document.write(season);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

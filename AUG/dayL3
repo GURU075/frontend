@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="ex.css"> 
+</head>
+<body>
+    <div>The</div>
+   <h1>Kakashi</h1>
+   <p>Hatake</p>
+</body>
+</html>

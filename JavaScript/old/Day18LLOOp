@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    //   var n= prompt("enter size");
+    //   var n2 = Number.parseInt(n);
+    //   var sum= 0;
+    //   var a= 1;
+    //   var b=0;
+      
+    //   while(n>0){
+        
+    //     document.write(sum+" ");
+    //     b=a;
+    //     a=sum;
+    //      sum = a+b;
+    //         n--;
+    //   }
+var sum = 0;
+    for(let i=0;i<=10;i++){
+         sum+=i;
+    }
+    document.write(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

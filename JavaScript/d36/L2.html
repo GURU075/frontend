@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Snap Buttons</title>
+    <style>
+        #container {
+            background-color: rgb(196, 235, 235);
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(8, 88, 99);
+            position: absolute;
+            cursor: grab;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+        }
+
+        #btn1 {
+            top: 50px;
+            left: 50px;
+        }
+
+        #btn2 {
+            top: 150px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="btn1" class="button">B1</div>
+        <div id="btn2" class="button">B2</div>
+    </div>
+    <script>
+        const btn1 = document.getElementById("btn1");
+        const btn2 = document.getElementById("btn2");
+
+        let startX, startY, offsetX, offsetY;
+
+        btn1.addEventListener("mousedown", mouseDown1);
+        btn2.addEventListener("mousedown", mouseDown2);
+
+        function mouseDown1(e) {
+            startX = e.clientX;
+            offsetX = btn1.offsetLeft;
+
+            document.addEventListener("mousemove", mouseMove1);
+            document.addEventListener("mouseup", mouseUp1);
+        }
+
+        function mouseMove1(e) {
+            const newX = offsetX + (e.clientX - startX);
+            btn1.style.left = `${newX}px`;
+        }
+
+        function mouseUp1() {
+            snapToPosition(btn1);
+            document.removeEventListener("mousemove", mouseMove1);
+            document.removeEventListener("mouseup", mouseUp1);
+        }
+
+        function mouseDown2(e) {
+            startX = e.clientX;
+            offsetX = btn2.offsetLeft;
+
+            document.addEventListener("mousemove", mouseMove2);
+            document.addEventListener("mouseup", mouseUp2);
+        }
+
+        function mouseMove2(e) {
+            const newX = offsetX + (e.clientX - startX);
+            btn2.style.left = `${newX}px`;
+        }
+
+        function mouseUp2() {
+            snapToPosition(btn2);
+            document.removeEventListener("mousemove", mouseMove2);
+            document.removeEventListener("mouseup", mouseUp2);
+        }
+
+        function snapToPosition(button) {
+            const snapPositions = [50, 150, 250, 350];
+            const currentLeft = button.offsetLeft;
+            const closest = snapPositions.reduce((prev, curr) => 
+                Math.abs(curr - currentLeft) < Math.abs(prev - currentLeft) ? curr : prev
+            );
+
+            button.style.left = `${closest}px`;
+        }
+    </script>
+</body>
+</html>

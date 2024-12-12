@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Headers, Footers, and Captions</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Table with a Caption, Headers, Footers, and Data -->
+    <table>
+        <!-- Caption -->
+        <caption>Fruit Price Table</caption>
+        
+        <!-- Table Headers -->
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price (per unit)</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body with Data -->
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>10</td>
+                <td>$1</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>5</td>
+                <td>$0.5</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>8</td>
+                <td>$0.75</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>$12.75</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

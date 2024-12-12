@@ -1,0 +1,100 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume of Gururaj Sambhaji Yadav</title>
+</head>
+<body>
+     <center>
+    <h1>Gururaj Sambhaji Yadav</h1>
+    <span><strong>Phone:</strong> +91-9637439059 |</span>
+    <span><strong>Email:</strong> <a href="mailto:gururajyadav.sae.comp@gmail.com">gururajyadav.sae.comp@gmail.com </a>|</span>
+    <span><strong>Location:</strong> Pune, Maharashtra, India - 411048</span>
+    <br>
+    <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gururaj-yadav/">linkedin.com/in/gururaj-yadav </a>|</span>
+    <span><strong>GitHub:</strong> <a href="https://github.com/GURU075">github.com/gururaj-yadav</a></span>
+    </center>
+    <br>
+    <p align="left">
+        <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" 
+    </p>
+
+     
+
+    <h2> <img src="search.png" alt="Icon" width="20" height="20"> Summary</h2>
+    <p>Computer Science graduate with a CGPA of 8.53. Experienced in Java and Spring Boot. Developed and deployed an HRMS project on AWS EC2 during a four-month internship at Zplus Cyber Secure Technologies Pvt. Ltd. Have knowledge in version control and streamlined deployment with practical experience in Spring Boot. Achieved 3rd place in a project competition and certified as an AWS Cloud Practitioner. Seeking to apply technical skills in live projects.</p>
+    <br>
+    <p align="left">
+        <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" 
+      </p>
+
+    <h2>Education</h2>
+    <table border="1">
+        <tr>
+            <th>Institution</th>
+            <th>Degree</th>
+            <th>Year</th>
+            <th>CGPA/Percentage</th>
+        </tr>
+        <tr>
+            <td>Sinhgad Academy of Engineering, Pune</td>
+            <td>B.E. - Computer Science & Engineering</td>
+            <td>2020 - 2024</td>
+            <td>8.53/10</td>
+        </tr>
+        <tr>
+            <td>Shikshanmaharshi Bapuji Salunkhe Mahavidyalaya, Karad</td>
+            <td>12th - HSC</td>
+            <td>2020</td>
+            <td>67.00%</td>
+        </tr>
+        <tr>
+            <td>Yashwant High School, Karad</td>
+            <td>10th - SSC</td>
+            <td>2018</td>
+            <td>88.00%</td>
+        </tr>
+    </table>
+    <br>
+    <p align="left">
+        <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" 
+      </p>
+
+    <h2>Projects</h2>
+    <h3>Human Resource Management System</h3>
+    <p><strong>Technology Stack:</strong> Spring Boot, Java, Thymeleaf, MySQL, Git, CI/CD, AWS (EC2)</p>
+    <p>Engineered an HRMS with enhanced user interaction and automated processes, leveraging Spring Boot for API development. Deployed the system on an AWS EC2 instance using Jenkins for streamlined deployment. <a href="https://github.com/GURU075/HRMSZPLUS">Project Link</a></p>
+
+    <h3>Payroll Management System</h3>
+    <p><strong>Technology Stack:</strong> Servlets, JSP, HTML, MySQL</p>
+    <p>Automated payroll processing by integrating salary calculations, tax deductions, and benefits into a unified system. Reduced the monthly processing cycle by 15 hours. <a href="https://github.com/GURU075/Payroll">Project Link</a></p>
+    <br><p align="left">
+        <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" 
+      </p>
+
+    <h2>Certifications and Achievements</h2>
+    <ul>
+        <li>Master Spring Boot with Real-Time Project, Learn Code With Durgesh, Sep 2024</li>
+        <li>AWS Certified Cloud Practitioner (ID: 8c597efcdebf4faab076035ba8f34ed2)</li>
+        <li>3rd Position in Project Competition (Cash Prize)</li>
+    </ul>
+    <br><p align="left">
+        <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" 
+      </p>
+
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming Languages:</strong> Java, SQL, HTML</li>
+        <li><strong>Technologies and Tools:</strong> Spring Boot, J2EE, Collection Framework, JSP, Servlets, MySQL, Git, GitHub, Jenkins, AWS (EC2), REST APIs, Postman, Thymeleaf, Data Structures and Algorithms, Debugging</li>
+        <li><strong>Operating Systems:</strong> Linux, Windows</li>
+    </ul>
+    <br><p align="left">
+        <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" 
+      </p>
+
+    <h2>Personal Interests</h2>
+    <p>Learning new technologies, Music, Drawing</p>
+
+</body>
+</html>

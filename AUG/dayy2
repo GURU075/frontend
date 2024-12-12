@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The <meta> tag defines metadata about an HTML document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The <title> tag defines the title of the document -->
+    <title>HTML Tag Example</title>
+    <!-- The <style> tag is used to define internal CSS -->
+   
+</head>
+<body>
+    <!-- The <header> element represents introductory content -->
+    <header>
+        <!-- The <h1> to <h6> tags are used for headings -->
+        <h1>Welcome to HTML Tag Example</h1>
+        <!-- The <img> tag is used to embed an image -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIpkXr9YNeWnWrJvvKG3yymHAjWu6Do0keDg&s" alt="Placeholder Image">
+    </header>
+
+    <!-- The <div> tag is used as a container for other HTML elements -->
+    <div class="container">
+        <!-- The <section> tag defines sections in a document -->
+        <section id="section1">
+            <!-- The <h2> tag defines a secondary heading -->
+            <h2>Section 1: Basic HTML Elements</h2>
+            <!-- The <p> tag defines a paragraph -->
+            <p>This is a paragraph. HTML is a markup language for creating web pages.</p>
+            <!-- The <b> and <strong> tags define bold text, <i> and <em> define italic text -->
+            <p><b>Bold text</b>, <strong>strong text</strong>, <i>italic text</i>, <em>emphasized text</em></p>
+            <!-- The <a> tag defines a hyperlink -->
+            <a href="https://www.example.com" target="_blank">Visit Example</a>
+            <!-- The <br> tag inserts a single line break -->
+            <br>
+            <!-- The <hr> tag defines a thematic break -->
+            <hr>
+        </section>
+
+        <section id="section2">
+            <h2>Section 2: Lists and Tables</h2>
+            <!-- The <ol> tag defines an ordered list -->
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+            <!-- The <table> tag defines a table -->
+            <table border="black">
+                <!-- The <thead> element groups the header content in a table -->
+                <thead>
+                    <!-- The <tr> tag defines a row in a table -->
+                    <tr>
+                        <!-- The <th> tag defines a header cell in a table -->
+                        <th colspan="2">Personal Information</th>
+                    </tr>
+                </thead>
+                <!-- The <tbody> element groups the body content in a table -->
+                <tbody>
+                    <!-- The <td> tag defines a standard cell in a table -->
+                    <tr>
+                        <td>Name</td>
+                        <td>John </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Contact</td>
+                        <td>Email: john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone: 123-456-7890</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+       
+</body>
+</html>

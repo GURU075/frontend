@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: rgb(196, 235, 235);
+            width: 500;
+            height: 500;
+
+        }
+        #card{
+            width: 50;
+            height: 50;
+            background-color: rgb(8, 88, 99);
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="card"> </div>
+    </div>
+    <script>
+        const card = document.getElementById("card");
+
+        let offsetX = 0;
+        let offsetY = 0;
+        let isDragging = false;
+
+        card.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            offsetX = e.clientX - card.offsetLeft;
+            offsetY = e.clientY - card.offsetTop;
+
+            document.addEventListener("mousemove", mousemove);
+            document.addEventListener("mouseup", mouseup);
+        });
+
+        function mousemove(e) {
+            if (isDragging) {
+                card.style.left = `${e.clientX - offsetX}px`;
+                card.style.top = `${e.clientY - offsetY}px`;
+            }
+        }
+
+        function mouseup() {
+            isDragging = false;
+            document.removeEventListener("mousemove", mousemove);
+            document.removeEventListener("mouseup", mouseup);
+        }
+    </script>
+</body>
+</html>

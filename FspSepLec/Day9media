@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "nav nav"
+                "header header"
+                "main1 main1"
+                "section aside2"
+                "footer footer";
+            background-color: #fff;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+
+        .grid-container > div {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .nav { grid-area: nav; background-color: rgb(77, 77, 151); }
+        .header { grid-area: header; background-color: lightgreen; }
+        .main1 { grid-area: main1; background-color: cornflowerblue; }
+        .section { grid-area: section; background-color: aquamarine; }
+        .aside2 { grid-area: aside2; background-color: darkcyan; }
+        .footer { grid-area: footer; background-color: cyan; }
+
+       
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-areas:
+                    "nav"
+                    "header"
+                    "main1"
+                    "main2"
+                    "section"
+                    "aside2"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="nav">Navigation</div>
+    <div class="header">Header</div>
+    <div class="aside">Aside</div>
+    <div class="main1">Main</div>
+    <div class="section">Section</div>
+    <div class="aside2">Aside</div>
+    <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>

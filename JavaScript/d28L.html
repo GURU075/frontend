@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <p>HTML Method</p>
+    <input type="text" id="htmlKeydown" onkeydown="htmlKeyDownfun()" >
+    <input type="text" id="htmlKeypress" onkeypress="htmlKeyPressfun()" >
+    <input type="text" id="htmlKeyup" onkeyup="htmlKeyUpfun()">
+
+    <p> addEventListener Method</p>
+    <input type="text" id="listenerKeydown">
+    <input type="text" id="listenerKeypress">
+    <input type="text" id="listenerKeyup" >
+
+    <p> JS Method</p>
+    <input type="text" onkeydown="inlineMethod(this, 'blue')" >
+    <input type="text" onkeypress="inlineMethod(this, 'gray')" >
+    <input type="text" onkeyup="inlineMethod(this, 'pink')" >
+
+    <script>
+        function htmlKeyDownfun() {
+            let input = document.getElementById("htmlKeydown");
+            input.value = input.value.toUpperCase();
+            input.style.backgroundColor = "lightyellow";
+            input.style.fontFamily ="cr"
+        }
+
+        function htmlKeyPressfun() {
+            let input = document.getElementById("htmlKeypress");
+            input.value = input.value.toUpperCase();
+            input.style.backgroundColor = "lightblue";
+        }
+
+        function htmlKeyUpfun() {
+            let input = document.getElementById("htmlKeyup");
+            input.value = input.value.toUpperCase();
+            input.style.backgroundColor = "lightgreen";
+        }
+
+        const listenerKeydown = document.getElementById("listenerKeydown");
+        listenerKeydown.addEventListener("keydown", function () {
+            listenerKeydown.value = listenerKeydown.value.toUpperCase();
+            listenerKeydown.style.backgroundColor = "lightpink";
+        });
+
+        const listenerKeypress = document.getElementById("listenerKeypress");
+        listenerKeypress.addEventListener("keypress", function () {
+            listenerKeypress.value = listenerKeypress.value.toUpperCase();
+            listenerKeypress.style.backgroundColor = "blue";
+        });
+
+        const listenerKeyup = document.getElementById("listenerKeyup");
+        listenerKeyup.addEventListener("keyup", function () {
+            listenerKeyup.value = listenerKeyup.value.toUpperCase();
+            listenerKeyup.style.backgroundColor = "red";
+        });
+
+        function inlineMethod(input, color) {
+            input.style.backgroundColor = color;
+            input.value = input.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

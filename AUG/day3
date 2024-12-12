@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title> my website!</title>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <p>This is the home page of my website.</p>
+    <h2>About Me</h2>
+    <p>My name is GURU and I'm a web developer.</p>
+    <ol>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ol>
+    <table>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="Name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" value="Email">
+        <br><br>
+        <label for="text">Message:</label>
+        <textarea id="message" name="message" style="width: 300px; height: 100px;"></textarea>
+<br><br>
+        <button type="submit">Send</button>
+    </form>
+    <p>write some content here</p>
+</body>
+        

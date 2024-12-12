@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="p-3 bg-primary text-white">
+                    <h5>Primary Background with White Text</h5>
+                    <p>This is an example of using Bootstrap's primary background color with white text.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="p-3 bg-dark text-white">
+                    <h5>Dark Background with White Text</h5>
+                    <p>This is an example of using a dark background color with white text.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="p-3 text-danger">
+                    <h5>Danger Text Color</h5>
+                    <p>This is an example of using Bootstrap's danger text color.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="p-3 bg-info text-white">
+                    <h5>Info Background with White Text</h5>
+                    <p>This is an example of using a custom background color (info) with white text.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

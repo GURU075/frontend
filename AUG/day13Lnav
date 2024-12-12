@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Nav</h2>
+        <p>Basic horizontal menu:</p>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">drop 1</a></li>
+                <li><a class="dropdown-item" href="#">drop 2</a></li>
+                <li><a class="dropdown-item" href="#">drop 3</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>

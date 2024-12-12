@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        /* Grid container setup */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "nav nav"
+                "header header"
+                "aside main1"
+                "main2 main2"
+                "section aside2"
+                "footer footer";
+            grid-gap: 10px; /* Space between grid items */
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        /* Define the grid areas and their sizes */
+        .grid-container > div {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .nav { grid-area: nav; background-color: blue; }
+        .header { grid-area: header; background-color: lightgreen; }
+        .aside { grid-area: aside; background-color: teal; }
+        .main1 { grid-area: main1; background-color: cornflowerblue; }
+        .main2 { grid-area: main2; background-color: deepskyblue; }
+        .section { grid-area: section; background-color: aquamarine; }
+        .aside2 { grid-area: aside2; background-color: darkcyan; }
+        .footer { grid-area: footer; background-color: cyan; }
+
+        /* Responsive setup: Adjust grid template for small screens */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-areas:
+                    "nav"
+                    "header"
+                    "aside"
+                    "main1"
+                    "main2"
+                    "section"
+                    "aside2"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="nav">Navigation</div>
+    <div class="header">Header</div>
+    <div class="aside">Aside</div>
+    <div class="main1">Main-1</div>
+    <div class="main2">Main-2</div>
+    <div class="section">Section</div>
+    <div class="aside2">Aside</div>
+    <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>

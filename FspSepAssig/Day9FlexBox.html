@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            margin-top: 40px;
+            margin-left: 40px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+            width: 90%;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 270px;
+            
+            
+        }
+        .box {
+            background: rgb(125, 125, 248);
+            color: white;
+           border: 2px solid black;
+           padding: 1px;
+            text-align: center;
+            font-size: smaller;
+            width: 30px;
+            height: 30px;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            height: 150px;
+            
+        }
+        .flex-item{
+            background-color: rgb(223, 148, 9);
+            
+            
+            border: 2px solid black;
+            margin-right: 10px ;
+            width: 200px;
+        }
+        #b1{
+            justify-content: space-around;
+        }
+        .container1{
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item">
+            <div  class="row">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item" >
+            <div  class="row" style="justify-content: center;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div  class="flex-item" >
+            <div class="row" style="justify-content: flex-end;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div id="b1" class="row" >
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item" >
+            <div class="row" style="justify-content: space-around;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item" >
+            <div class="row" style="justify-content: space-evenly;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="row"  style="justify-content: left;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+     
+    </div>
+    <div class="container1">
+        <div class="flex-item">
+            <div class="row"  style="justify-content: left; align-items: center;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="row"  style="align-items: flex-end;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="row"  style="justify-content: center; align-items: center;">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="row"  style="justify-content: center; align-items: end">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

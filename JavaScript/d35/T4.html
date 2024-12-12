@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="tri" width="400" height="500">
+
+    </canvas>
+    <script>
+        const c = document.getElementById("tri");
+        const d = c.getContext("2d");
+        
+        d.beginPath();
+        d.moveTo(100,300);
+        d.lineTo(300,300);
+        d.lineTo(350,150);
+        d.moveTo(100,300);
+        d.lineTo(50,150);
+        d.lineTo(200,20)
+        d.lineTo(350,150)
+        d.stroke();
+        
+    </script>
+</body>
+</html>

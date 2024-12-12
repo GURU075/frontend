@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName Example</title>
+</head>
+<body>
+
+    <p>purple.</p>
+    <p>blue.</p>
+
+    <p class="myClass">first element</p>
+    <p class="myClass">second element</p>
+
+    <p name="uniqueName">orange.</p>
+
+    <p id="uniqueId"> red.</p>
+
+    <script>
+        let elements = document.getElementsByTagName("p");
+       
+            elements[0].style.color = "purple";
+            elements[1].style.color = "blue";
+
+            let classElements = document.getElementsByClassName("myClass");
+            classElements[0].style.color = "green";
+            classElements[1].style.color = "red";
+
+            let nameElements = document.getElementsByName("uniqueName");
+            nameElements[0].style.color = "orange";
+
+            document.getElementById("uniqueId").style.color = "red";
+        
+        
+        
+    </script>
+
+</body>
+</html>

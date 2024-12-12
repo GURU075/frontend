@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            padding: 20px;
+        }
+        
+        .highlight {
+            background-color: #ffeb3b;
+        }
+        #employee-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Employee Management System</h1>
+
+<div>
+    <label for="emp-name">Name:</label>
+    <input type="text" id="emp-name">
+    <label for="emp-role">Role:</label>
+    <input type="text" id="emp-role">
+    <label for="emp-salary">Salary:</label>
+    <input type="number" id="emp-salary">
+    <button onclick="addEmployee()">Add Employee</button>
+    <button onclick="resetForm()">Reset</button>
+</div>
+
+<div id="employee-list">
+    <h3>Employee List</h3>
+</div>
+
+<script>
+    function addEmployee() {
+        const name = document.getElementById('emp-name').value;
+        const role = document.getElementById('emp-role').value;
+        const salary = document.getElementById('emp-salary').value;
+
+        if (name === "" || role === "" || salary === "") {
+            alert("Please fill all fields.");
+            return;
+        }
+
+        const employeeDiv = document.createElement('div');
+        employeeDiv.style.backgroundColor = "#f0f8ff"; 
+        employeeDiv.style.padding = "10px";
+        employeeDiv.style.margin = "10px 0";
+        employeeDiv.style.border = "1px solid #ccc";
+        employeeDiv.style.borderRadius = "5px";
+        employeeDiv.style.fontFamily = "Arial, sans-serif";
+
+        employeeDiv.innerHTML = `
+            <strong>Name:</strong> ${name}<br>
+            <strong>Role:</strong> ${role}<br>
+            <strong>Salary:</strong> $${salary}
+        `;
+
+        if (salary > 50000) {
+            employeeDiv.classList.add('highlight');
+        }
+
+        document.getElementById('employee-list').appendChild(employeeDiv);
+
+        resetForm();
+    }
+
+    function resetForm() {
+        document.getElementById('emp-name').value = '';
+        document.getElementById('emp-role').value = '';
+        document.getElementById('emp-salary').value = '';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+  
+</head>
+<body>
+  <h4>Submit</h4>
+
+  <div>
+    <h3>HTML</h3>
+    <input type="text" id="inputHTML" placeholder="Enter text">
+    <button onclick="displayHTML()">Submit</button>
+    <p class="output" id="outputHTML"></p>
+  </div>
+
+  <div>
+    <h3>Listener</h3>
+    <input type="text" id="inputLis" placeholder="Enter text">
+    <button id="btnList">Submit</button>
+    <p class="output" id="outputLis"></p>
+  </div>
+
+  <div>
+    <h3>JavaScript </h3>
+    <input type="text" id="inputJS" placeholder="Enter text">
+    <button id="btnJS">Submit</button>
+    <p class="output" id="outputJS"></p>
+  </div>
+
+  <script>
+    function displayHTML() {
+      const input = document.getElementById("inputHTML").value;
+      const output = document.getElementById("outputHTML");
+      output.textContent = input;
+    }
+
+    document.getElementById("btnList").addEventListener("click", function() {
+      const input = document.getElementById("inputLis").value;
+      const output = document.getElementById("outputLis");
+      output.textContent = input;
+    });
+
+    function displayJS() {
+      const input = document.getElementById("inputJS").value;
+      const output = document.getElementById("outputJS");
+      output.textContent = input;
+    }
+    document.getElementById("btnJS").onclick = displayJS;
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JavaScript Example</title>
+    <script>
+        function showMessage() {
+            alert("This is an Internal JavaScript Alert!");
+        }
+        var num1 = prompt("Enter 1st no");
+        var num2 = prompt("Enter 2nd no");
+        var product = num1*num2;
+        alert(product);
+        document.wirte("<h1>product"+product);
+    </script>
+</head>
+<body>
+    <button onclick="showMessage()">Click Me (Internal JS)</button>
+</body>
+</html>

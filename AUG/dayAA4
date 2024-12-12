@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<head>
+    <center><h1>IT COURSES</h1></center>
+</head>
+<body>
+    <ol>
+        <li>JAVA FULL STACK DECELOPER</li>
+         <ul>
+            <li><a href="https://www.w3schools.com/sql/">SQL</a></li>
+            <li><a href="https://www.javatpoint.com/what-is-core-java">CORE JAVA</a></li>
+            <li><a href="https://www.geeksforgeeks.org/web-technology/">WEB TECH</a></li>
+            <li><a href="https://www.javatpoint.com/what-is-advance-java">ADVANCE JAVA</a></li>
+         </ul>
+         <li>MERN STACK DEVELOPER</li>
+         <ul>
+            <li><a href="https://www.w3schools.com/mongodb/">MongoDB</a></li>
+            <li><a href="https://www.geeksforgeeks.org/express-js/">Express.js</a></li>
+            <li><a href="https://www.w3schools.com/REACT/DEFAULT.ASP">React</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp">Node.js</a></li>
+         </ul>
+         <li>MERN STACK DEVELOPER</li>
+         <ul>
+            <li><a href="https://www.w3schools.com/mongodb/">MongoDB</a></li>
+            <li><a href="https://www.geeksforgeeks.org/express-js/">Express.js</a></li>
+            <li><a href="https://www.w3schools.com/REACT/DEFAULT.ASP">React</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp">Node.js</a></li>
+         </ul>
+    </ol>
+</body>

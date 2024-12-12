@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .message {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Enter a phone number :</p>
+    <input type="text" id="phoneNumber" placeholder="Enter phone number">
+    <button onclick="validatePhoneNumber()">Validate</button>
+    <div class="message" id="message"></div>
+
+    <p>Enter a Email :</p>
+    <input type="email" id="phoneEmail" placeholder="Enter Email">
+    <button onclick="validateEmail()">Validate</button>
+    <div class="messageE" id="messageE"></div>
+<script>
+    function validateEmail() {
+            const phoneEmail = document.getElementById("phoneEmail").value;
+
+            const phoneReg = /^\S+@gmail\.com$/;
+
+            const msg = document.getElementById("messageE");
+
+            if (phoneReg.test(phoneEmail)) {
+                msg.textContent = "Valid Email!";
+                msg.className = "messageE success";
+            } else {
+                msg.textContent = "Invalid Email. Please try again.";
+                msg.className = "messageE error";
+            }
+        }
+</script>
+    <script>
+        function validatePhoneNumber() {
+            const phoneNumber = document.getElementById("phoneNumber").value;
+
+            const phoneReg = /^(0|[+91]{3})?[7-9][0-9]{9}$/;
+
+            const msg = document.getElementById("message");
+
+            if (phoneReg.test(phoneNumber)) {
+                msg.textContent = "Valid phone number!";
+                msg.className = "message success";
+            } else {
+                msg.textContent = "Invalid phone number. Please try again.";
+                msg.className = "message error";
+            }
+        }
+        
+    </script>
+</body>
+</html>

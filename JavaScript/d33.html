@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <button id="playButton">Play</button>
+    <button id="pauseButton">Pause</button>
+    <p id="message"></p>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const messageElement = document.getElementById('message');
+
+        playButton.addEventListener('click', () => {
+            messageElement.textContent = 'Window object: ' + this;
+            console.log(this);
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- var dog = {
+    name: 'tommy',
+    age: 1,
+    getage: function() {
+        return this.age;
+    }
+};
+
+function d(a, b) {
+    console.log(this.getage() + a + b);
+}
+
+var boundD = d.bind(dog, 'a', 'b');
+
+boundD(); -->
+
+class ShapeCalculator {
+    constructor(shape) {
+      this.shape = shape;
+    }
+  
+    calculateArea() {
+      switch (this.shape) {
+        case 'triangle':
+          const base = parseFloat(prompt('Enter base:'));
+          const height = parseFloat(prompt('Enter height:'));
+          return 0.5 * base * height;
+        case 'rectangle':
+          const length = parseFloat(prompt('Enter length:'));
+          const width = parseFloat(prompt('Enter width:'));
+          return length * width;
+        case 'square':
+          const side = parseFloat(prompt('Enter side:'));
+          return side * side;
+        default:
+          return 'Invalid shape';
+      }
+    }
+  }
+  const prompt = require("prompt-sync")()
+  const shape = prompt('Enter shape (triangle, rectangle, square):');
+  const calculator = new ShapeCalculator(shape);
+  const area = calculator.calculateArea();
+  console.log(`Area: ${area}`);

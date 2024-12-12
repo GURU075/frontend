@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .backgroundC{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="a" onblur="removeBg()" onfocus="applyBg()">
+    <script>
+      let  x= document.getElementById("a");
+      function applyBg(){
+        x.classList.add("backgroundC");
+      }
+      function removeBg(){
+        x.classList.remove("backgroundC");
+      }
+
+    </script>
+</body>
+</html>
