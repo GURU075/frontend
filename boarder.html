@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg1 { 
+  border: 15px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 140 round;
+  -webkit-box-reflect: below;
+}
+
+#borderimg2 { 
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url(border.png) 30 stretch;
+}
+#borderimg3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 50 round;
+}
+
+#borderimg4 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 45% round;
+}
+
+#borderimg5 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% round;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image Property</h1>
+<p>The border-image property specifies an image to be used as the border around an element:</p>
+
+<p id="borderimg1">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+<br><br><br><br><br><br><b></b>
+<p id="borderimg2">Here, the image is stretched to fill the area.</p>
+<p id="borderimg3">border-image: url(border.png) 50 round;</p>
+<p id="borderimg4">border-image: url(border.png) 20% round;</p>
+<p id="borderimg5">border-image: url(border.png) 30% round;</p>
+
+<p>Here is the original image:</p>
+<img src="border.png">
+
+</body>
+</html>

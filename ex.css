@@ -1,0 +1,27 @@
+body {
+    background-image: url("download.jpg");
+    background-attachment: fixed; 
+    
+    background-repeat: no-repeat;
+    background-position: top ;
+    background-color: darkgray;
+    
+}
+
+p,div,h1{
+    text-align-last: center;
+    
+    font-family: "Sofia", sans-serif;
+    color:rgb(108, 123, 143);
+    border:blueviolet;
+    font-weight: bolder;
+    background-image: url("s.webp");
+    font-size: 3em;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgb(16, 214, 204),
+    0 0 30px rgb(16, 214, 204),
+    0 0 40px rgb(16, 214, 204),
+    0 0 55px rgb(16, 214, 204),
+    0 0 70px rgb(16, 214, 204);
+}
